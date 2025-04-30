@@ -1,41 +1,46 @@
-#  Shopping Cart App
+#  Shopping Cart App (MVI + Clean Architecture)
 
-A simple shopping cart app built with **Kotlin** and **Jetpack Compose** using the **MVI architecture** and **Clean Architecture** principles.
+## Overview
+A simple Shopping Cart application built using:
+- MVI (Model-View-Intent) architecture
+- Clean Architecture principles
+- Kotlin and Jetpack Compose
 
----
-
-##  Features
-
+The app allows users to:
 - Add items to the cart
 - Remove items from the cart
-- Update item quantity
+- Update item quantities
 - View total price
 
 ---
 
-##  Architecture
+## Architecture Layers
 
-The app uses **Clean Architecture** with three layers:
-
-- **Presentation Layer**: UI with Jetpack Compose and ViewModel
-- **Domain Layer**: Use cases and repository interfaces
-- **Data Layer**: In-memory data source and repository implementation
+- **Presentation Layer**: UI (Jetpack Compose) and ViewModel
+- **Domain Layer**: Use Cases and Repository interface
+- **Data Layer**: In-memory Data Source and Repository implementation
 
 ---
 
-##  MVI Pattern
+## MVI Components
 
-- **Intent**: Add, Remove, Update, Load Cart
-- **State**: Loading, Success, Error
-- **ViewModel**: Handles intents and updates state with `StateFlow`
+- **Intent**: Defines actions (AddItem, RemoveItem, UpdateQuantity, LoadCart)
+- **State**: Represents UI state (Loading, Success, Error)
+- **ViewModel**: Handles Intents and updates the State with StateFlow
 
 ---
 
-##  Unit Testing
+## How to Run
 
-Includes tests for:
-- Loading cart items
-- Adding/removing items
-- Updating quantities
+1. Clone the project.
+2. Open it in Android Studio.
+3. Run the app on an emulator or device.
+
+---
+
+## Features
+
+- Add, remove, update cart items
+- Real-time UI updates with StateFlow
 
 ---
